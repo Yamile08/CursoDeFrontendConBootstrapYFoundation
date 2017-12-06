@@ -167,3 +167,17 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 600px;
 }
+
+#suscribete {
+  background-color: #EE3F54;
+  color: white;
+  padding: 1em 0;
+}
+
+#suscribete h4 small {
+  color: #ffcddc;
+}
+
+#suscribete input[type="submit"] {
+  font-family: 'Bree Serif', serif;
+}
