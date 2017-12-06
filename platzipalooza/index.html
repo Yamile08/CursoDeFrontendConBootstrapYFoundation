@@ -41,9 +41,9 @@
           <li>
             <a href="#lineup-container">Lineup</a>
             <ul class="submenu-container menu">
-              <li><a href="#">Viernes</a></li>
-              <li><a href="#">Sábado</a></li>
-              <li><a href="#">Domingo</a></li>
+              <li><a href="#viernes" data-toggle-dia="panelViernes">Viernes</a></li>
+              <li><a href="#sabado" data-toggle-dia="panelSabado">Sábado</a></li>
+              <li><a href="#domingo" data-toggle-dia="panelDomingo">Domingo</a></li>
             </ul>
           </li>
           <li><a href="#info-container">Info</a></li>
@@ -69,10 +69,10 @@
     <!-- Tabs -->
     <ul class="tabs text-center" data-tabs id="lineup-tabs">
       <li class="tabs-title is-active">
-        <a href="#panelViernes" aria-selected="true">Viernes</a>
+        <a href="#panelViernes" aria-selected="true" data-magellan-target="viernes" id="viernes">Viernes</a>
       </li>
-      <li class="tabs-title"><a href="#panelSabado">Sábado</a></li>
-      <li class="tabs-title"><a href="#panelDomingo">Domingo</a></li>
+      <li class="tabs-title"><a href="#panelSabado" data-magellan-target="sabado" id="sabado">Sábado</a></li>
+      <li class="tabs-title"><a href="#panelDomingo" data-magellan-target="domingo" id="domingo">Domingo</a></li>
     </ul>
 
     <!-- Tabs content -->
