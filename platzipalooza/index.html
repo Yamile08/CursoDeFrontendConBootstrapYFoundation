@@ -34,19 +34,21 @@
   <!-- Main menu -->
 
   <section class="menu-container">
-    <ul class="dropdown menu align-spaced" data-dropdown-menu>
-      <li><a href="#">Tickets</a></li>
-      <li>
-        <a href="#">Lineup</a>
-        <ul class="submenu-container menu">
-          <li><a href="#">Viernes</a></li>
-          <li><a href="#">Sábado</a></li>
-          <li><a href="#">Domingo</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Info</a></li>
-      <li><a href="#">Suscríbete</a></li>
-    </ul>
+    <nav data-magellan>
+      <ul class="dropdown menu align-spaced" data-dropdown-menu>
+        <li><a href="#tickets-container">Tickets</a></li>
+        <li>
+          <a href="#lineup-container">Lineup</a>
+          <ul class="submenu-container menu">
+            <li><a href="#">Viernes</a></li>
+            <li><a href="#">Sábado</a></li>
+            <li><a href="#">Domingo</a></li>
+          </ul>
+        </li>
+        <li><a href="#info-container">Info</a></li>
+        <li><a href="#suscribete">Suscríbete</a></li>
+      </ul>
+    </nav>
   </section>
 
   <!-- Comprar tickets -->
@@ -59,7 +61,7 @@
 
   <!-- Lineup -->
 
-  <section class="lineup-container">
+  <section class="lineup-container" data-magellan-target="lineup-container">
     <h1 class="text-center">Lineup</h1>
 
     <!-- Tabs -->
@@ -255,7 +257,7 @@
 
   <!-- Compra de boletos -->
 
-  <section id="tickets-container">
+  <section id="tickets-container" data-magellan-target="tickets-container">
   <h1 class="text-center">Comprar boletos</h1>
   <div class="row">
     <div class="column small-6 small-offset-3">
@@ -298,7 +300,7 @@
 </section>
 
 <!-- Suscribete -->
-<section id="suscribete">
+<section id="suscribete" data-magellan-target="suscribete">
   <h1 class="text-center">Suscríbete</h1>
   <h4 class="text-center"><small>Y recibe las últimas novedades del concierto</small></h4>
   <form action="" method="POST" novalidate data-abide>
@@ -319,7 +321,7 @@
 
 <!-- Informacion -->
 
-  <section id="info-container">
+  <section id="info-container" data-magellan-target="info-container">
     <h1 class="text-center">Información</h1>
     <div class="info-map" data-interchange="[assets/maps/map-small.html, small], [assets/maps/map.html, medium]"></div>
   </section>
