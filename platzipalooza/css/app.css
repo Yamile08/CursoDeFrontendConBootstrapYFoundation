@@ -181,3 +181,12 @@ h1, h2, h3, h4, h5, h6 {
 #suscribete input[type="submit"] {
   font-family: 'Bree Serif', serif;
 }
+
+#suscribete .error-container {
+  font-family: 'Bree Serif', serif;
+}
+
+.is-invalid-input:not(:focus) {
+  background-color: rgba(255, 228, 228);
+  border-color: rgba(255, 228, 228);
+}
